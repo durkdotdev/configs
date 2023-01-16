@@ -1,0 +1,28 @@
+{
+  "name": "configs",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/**",
+    "packages/**"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --fix ./**/*.{js,ts,json}",
+    "prepare": "husky install",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "turbo": "^1.6.3"
+  },
+  "packageManager": "yarn@1.22.19"
+}

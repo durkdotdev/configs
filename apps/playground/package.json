@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@durkdotdev/configs": "*",
+    "typescript": "^4.9.4"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ignorePatterns": ["node_modules"],
+  "plugins": ["simple-import-sort", "unused-imports"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "unused-imports/no-unused-imports": "error"
+  }
+}
