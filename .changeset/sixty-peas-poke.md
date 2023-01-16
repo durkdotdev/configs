@@ -1,5 +1,0 @@
----
-"@durkdotdev/configs": major
----
-
-Release
