@@ -33,7 +33,7 @@ npm install @durkdotdev/configs eslint eslint-plugin-simple-import-sort eslint-p
 npm install @durkdotdev/configs @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-simple-import-sort eslint-plugin-unused-imports typescript -D
 ```
 
-2. Create a `.d-eslintrc.js` file to export the config file locally:
+2. Create a `.d-eslint.js` file to export the config file locally:
 
 ```js
 module.exports = require("@durkdotdev/configs/eslint/base.json");
