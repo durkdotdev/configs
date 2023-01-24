@@ -1,5 +1,11 @@
 # @durkdotdev/configs
 
+## 1.0.2
+
+### Patch Changes
+
+- 7be337b: Fix .prettierrc.js README.md typo
+
 ## 1.0.1
 
 ### Patch Changes
