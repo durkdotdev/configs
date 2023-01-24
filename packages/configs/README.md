@@ -51,7 +51,7 @@ module.exports = {
 };
 ```
 
-For more on configuring ESLint, see the [ESLint Documentation](https://eslint.org/docs/latest/user-guide/configuring/).
+For more on configuring ESLint, see the [ESLint Documentation](https://eslint.org/docs/latest/user-guide/configuring).
 
 ### Prettier
 
