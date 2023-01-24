@@ -30,7 +30,7 @@ There are two different ESLint configs in this package:
 npm install @durkdotdev/configs eslint eslint-plugin-simple-import-sort eslint-plugin-unused-imports -D
 
 # TypeScript
-npm install @durkdotdev/configs @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-simple-import-sort eslint-plugin-unused-imports -D
+npm install @durkdotdev/configs @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-simple-import-sort eslint-plugin-unused-imports typescript -D
 ```
 
 2. Create a `.d-eslintrc.js` file to export the config file locally:
@@ -65,7 +65,7 @@ npm install @durkdotdev/configs prettier -D
 
 ```js
 module.exports = {
-  ...require("./packages/configs/prettier.json")
+  ...require("@durkdotdev/configs/prettier.json")
 };
 ```
 
