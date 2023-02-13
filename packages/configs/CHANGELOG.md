@@ -1,5 +1,11 @@
 # @durkdotdev/configs
 
+## 1.0.4
+
+### Patch Changes
+
+- c301cf1: 1.0.4
+
 ## 1.0.3
 
 ### Patch Changes
