@@ -13,7 +13,6 @@
     "moduleResolution": "node",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "outDir": "dist",
     "preserveWatchOutput": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
