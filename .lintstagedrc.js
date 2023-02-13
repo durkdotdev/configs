@@ -1,4 +1,3 @@
 module.exports = {
-  "**/*.{js,ts,jsx,tsx}": ["yarn lint", "yarn format"],
-  "**/*.json": ["yarn format"]
+  ...require("./packages/configs/lint-staged.json")
 };
