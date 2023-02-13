@@ -19,7 +19,7 @@ jobs:
           node-version: 16.x
 
       - uses: pnpm/action-setup@v2
-        with: latest
+        with: "latest"
 
       - run: pnpm i
 
