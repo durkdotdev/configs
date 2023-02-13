@@ -1,5 +1,11 @@
 # @durkdotdev/configs
 
+## 1.0.5
+
+### Patch Changes
+
+- 2b8fe0c: 1.0.5
+
 ## 1.0.4
 
 ### Patch Changes
