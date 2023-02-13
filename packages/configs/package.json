@@ -8,9 +8,10 @@
     "access": "public"
   },
   "files": [
-    "tsconfig/",
     "eslint/",
-    "./prettier.json"
+    "./lint-staged.json",
+    "./prettier.json",
+    "tsconfig/"
   ],
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "keywords": [
     "ESLint",
+    "lint-staged",
     "Prettier",
     "TypeScript"
   ]

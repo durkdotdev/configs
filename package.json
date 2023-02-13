@@ -1,14 +1,11 @@
 {
-  "name": "configs",
-  "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/**",
     "packages/**"
   ],
   "scripts": {
-    "format": "prettier --write .",
-    "lint": "eslint --fix ./**/*.{js,ts,json}",
+    "lint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}' && prettier --write .",
     "prepare": "husky install",
     "release": "changeset publish"
   },

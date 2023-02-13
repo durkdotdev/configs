@@ -1,6 +1,6 @@
 # @durkdotdev/configs
 
-Configuration files for developing with ESLint, Prettier, and TypeScript.
+Configuration files for developing with ESLint, lint-staged, Prettier, and TypeScript.
 
 ## Installation
 
@@ -88,6 +88,51 @@ module.exports = {
   extends: ["./.d-eslint", "prettier"]
   // ...
 };
+```
+
+### Integrating with lint-staged
+
+1. Install [`husky`](https://typicode.github.io/husky/#/) and [`lint-staged`](https://github.com/okonet/lint-staged):
+
+```
+bash npm install husky lint-staged -D
+```
+
+2. Add scripts to `package.json` to initialize husky and lint files:
+
+```js
+{
+  // ...
+  scripts: {
+    "lint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}' && prettier --write .",
+    "prepare": "husky install",
+    // ...
+  }
+  // ...
+}
+```
+
+3. Run the following command from the terminal:
+
+```bash
+npm run prepare
+```
+
+4. Create a `.lintstagedrc.js` file to extend the config file:
+
+```js
+module.exports = {
+  ...require("@durkdotdev/configs/lint-staged.json")
+};
+```
+
+5. Create `.husky/pre-commit`:
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx lint-staged
 ```
 
 ### TypeScript
