@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "@durkdotdev/configs": "*",
+    "@durkdotdev/configs": "workspace:*",
     "typescript": "^4.9.4"
   }
 }
