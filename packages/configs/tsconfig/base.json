@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
     "isolatedModules": true,
-    "lib": ["ES2017"],
+    "lib": ["ES2019"],
     "moduleResolution": "node",
     "noUnusedLocals": false,
     "noUnusedParameters": false,

@@ -28,7 +28,7 @@ importers:
 
   apps/playground:
     specifiers:
-      '@durkdotdev/configs': '*'
+      '@durkdotdev/configs': workspace:*
       typescript: ^4.9.4
     devDependencies:
       '@durkdotdev/configs': link:../../packages/configs
