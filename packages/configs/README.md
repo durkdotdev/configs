@@ -6,23 +6,43 @@ Configuration files for developing with ESLint, lint-staged, Prettier, and TypeS
 
 ```bash
 npm install @durkdotdev/configs -D
-
 # or
 yarn add @durkdotdev/configs -D
-
 # or
 pnpm add @durkdotdev/configs -D
-
 ```
 
 ## Usage
 
+### commitlint
+
+1. Install commitlint and husky:
+
+```bash
+npm install @commitlint/{config-conventional,cli} husky -D
+```
+
+2. Create a `.commitlintrc.js` file:
+
+```js
+module.exports = {
+  extends: ["@commitlint/config-conventional"]
+};
+```
+
+3. Create a `.husky/commit-msg`
+
+```bash
+npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+```
+
 ### ESLint
 
-There are two different ESLint configs in this package:
+There are three different ESLint configs in this package:
 
 - `base.json`
-- `typescript.json`
+- `nextjs.json`
+- `react-library.json`
 
 1. Install configuration file, ESLint, and ESLint plugins:
 
@@ -105,7 +125,7 @@ bash npm install husky lint-staged -D
   // ...
   scripts: {
     "lint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}' && prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky install"
     // ...
   }
   // ...

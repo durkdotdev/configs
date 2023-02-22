@@ -10,7 +10,6 @@ npm install @durkdotdev/configs -D
 yarn add @durkdotdev/configs -D
 # or
 pnpm add @durkdotdev/configs -D
-
 ```
 
 ## Documentation
