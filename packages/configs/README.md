@@ -26,23 +26,25 @@ npm install @commitlint/{config-conventional,cli} husky -D
 
 ```js
 module.exports = {
-  extends: ["@commitlint/config-conventional"]
+  ...require("@durkdotdev/configs/commitlint.json")
 };
 ```
 
 3. Create a `.husky/commit-msg`
 
 ```bash
-npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx --no -- commitlint --edit ${1}
 ```
 
 ### ESLint
 
-There are three different ESLint configs in this package:
+There are two different ESLint configs in this package:
 
 - `base.json`
-- `nextjs.json`
-- `react-library.json`
+- `typescript.json`
 
 1. Install configuration file, ESLint, and ESLint plugins:
 
