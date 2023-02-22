@@ -1,5 +1,11 @@
 # @durkdotdev/configs
 
+## 2.0.0
+
+### Major Changes
+
+- fddc52c: 2.0.0
+
 ## 1.0.9
 
 ### Patch Changes
