@@ -1,6 +1,6 @@
 {
   "name": "@durkdotdev/configs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Configuration files for developing with ESLint, Prettier, and TypeScript.",
   "author": "durkdotdev (https://durk.dev)",
   "license": "MIT",
