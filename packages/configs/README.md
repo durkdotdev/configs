@@ -1,6 +1,6 @@
 # @durkdotdev/configs
 
-Configuration files for developing with ESLint, lint-staged, Prettier, and TypeScript.
+Configuration files for developing with commitlint, ESLint, lint-staged, Prettier, and TypeScript.
 
 ## Installation
 
